@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+<title>表单验证</title>
+<link href="test.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../tool.js"></script>
+<script type="text/javascript" src="../ajax.js"></script>
+<script type="text/javascript" src="../base.js"></script>
+<script type="text/javascript" src="../base_form.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+
+</head>
+<body>
+<div class="biaodan">
+	<form name="reg">
+		<div class="normal">
+			<span>用户名：</span>
+			<input type="text" name="username">
+			<i class="user_default">请输入用户名，2~20位，由字母、数字和下划线组成！</i>
+			<i class="user_error">输入格式不正确，请重新输入！</i>
+			<i class="user_allright">信息输入正确！</i>
+		</div>
+		<div class="normal">
+			<span>密码：</span>
+			<input type="password" name="pass">
+			<i class="pass_default">请输入6~20个字符只能包含大小写字母数字和非空字符！</i>
+			<i class="pass_error">输入不合法，请重新输入！</i>
+			<i class="pass_allright">可用！</i>			
+		</div>
+		<div class="fzd">
+			<b><strong class="q1">○</strong>6~20个字符</b>
+			<b><strong class="q2">○</strong>只能包含大小写字母、数字和非空字符</b>
+			<b><strong class="q3">○</strong>大、小写字母、数字、非空字符，2种以上</b>
+		</div>
+		<div class="normal">
+			<span>密码确认：</span>
+			<input type="password" name="surepass">
+			<i class="notpass_default">请在一次输入密码！</i>
+			<i class="notpass_error">密码不一致，请重新输入！</i>
+			<i class="notpass_allright">输入正确！</i>
+		</div>
+		<div class="toQues">
+			<span>提问：</span>
+			<select name="ques">
+				<option value="0">---请选择---</option>
+				<option value="1">你初中老师的名字？</option>
+				<option value="2">你高中老师的名字？</option>
+				<option value="3">你的爱人的名字</option>
+				<option value="4">你母亲的名字？</option>
+			</select>
+		</div>
+		<div class="normal">
+			<span>回答：</span>
+			<input type="text" name="anw">
+			<i class="ans_default">请输入回答，2-32位！</i>
+			<i class="ans_error">回答不合法，请重新输入！</i>
+			<i class="ans_allright">正确！</i>
+		</div>
+		<div class="normal">
+			<span>电子邮件：</span>
+			<input type="text" name="email">
+			<i class="email_default">请输入电子邮件！</i>
+			<i class="email_error">邮件不合法，请重新输入！</i>
+			<i class="email_allright">输入正确！</i>
+			<ul class="all_email">
+				<li><i></i>@qq.com</li>
+				<li><i></i>@163.com</li>
+				<li><i></i>@sohu.com</li>
+				<li><i></i>@sina.com</li>
+				<li><i></i>@gmail.com</li>
+			</ul>
+		</div>
+		<div class="birthDay">
+			<span>生日：</span>
+			<select name="year">
+				<option value="0">-年-</option>
+			</select>-
+			<select name="month">
+				<option value="0">-月-</option>
+			</select>-
+			<select name="day">
+				<option value="0">-日-</option>
+			</select>
+		</div>
+		<div class="textArea">
+			<span>备注：</span>
+			<textarea name="ps" class="beizhu" noresize="yes"></textarea>
+		</div>
+		<span class="tishi" style="display:block;">还可以输入<strong class="num">200</strong>字</span>
+		<span class="tishi" style="display:none;">已超过<strong class="num"></strong>字,<i class="clear">清尾</i></span>
+		<div class="subBtn"><input type="button" name="submits" value="立即注册"></div>
+	</form>
+</div>
+<body>
+</html>

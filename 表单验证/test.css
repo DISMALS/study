@@ -1,0 +1,178 @@
+@charset "utf-8";
+body{width:100%;height:100%;background:#333;margin:0;padding:0;position:relative;}
+ul,li{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.biaodan{
+	width:600px;
+	height:auto;
+	border:1px solid #ccc;
+	position:absolute;
+	top:50px;
+	left:33%;
+	background:#fff;
+}
+.biaodan div{
+	width:100%;
+	min-height:30px;
+	margin:10px 0px;
+	display:block;
+	color:#666;
+	font-size:14px;
+	line-height:30px;
+	font-family:"Microsoft YaHei";
+	position:relative;
+}
+.biaodan div span{
+	display:inline-block;
+	width:80px;
+	height:30px;
+	text-align:right;
+	float:left;
+}
+.normal input,.toQues select{
+	width:160px;
+	height:28px;
+	margin-left:10px;
+	padding-left:10px;
+	border:1px solid #ccc;
+	line-height:28px;
+	outline:none;
+	color:#666;
+	float:left;
+}
+.toQues select{
+	width:170px;
+}
+.birthDay select{
+	width:80px;
+	height:30px;
+	margin-left:10px;
+	outline:none;
+	font-family:"Microsoft YaHei";
+	color:#666;
+}
+div.textArea{
+	height:100px;
+}
+.beizhu{
+	width:308px;
+	height:100px;
+	margin-left:10px;
+	padding-left:10px;
+	border:1px solid #ccc;
+	line-height:28px;
+	outline:none;
+	font-family:"Microsoft YaHei";
+	color:#666;
+}
+.tishi{
+	display:block;
+	width:400px;
+	margin:5px auto;
+	text-align:right;
+	font-size:14px;
+	color:#666;
+	line-height:24px;
+	padding-right:50px;
+}
+div.subBtn{
+	width:110px;
+	height:30px;
+	margin:10px auto;
+}
+div.subBtn input{
+	width:110px;
+	height:30px;
+	font-family:"Microsoft YaHei";
+	font-size:14px;
+	outline:none;
+	cursor:pointer;
+}
+
+/*信息提示相关样式*/
+.biaodan div i{
+	float:left;
+	font-size:12px;
+	font-style:normal;
+	margin-left:8px;
+}
+i.user_default,i.notpass_default,i.ans_default,i.email_default{
+	display:none;
+	color:#444;
+}
+i.user_error,i.notpass_error,i.ans_error,i.email_error{
+	color:#f00;
+	display:none;
+}
+i.user_allright,i.notpass_allright,i.ans_allright,i.email_allright{
+	color:green;
+	display:none;
+}
+i.pass_default{
+	color:#444;
+	display:none;
+}
+i.pass_error{
+	color:#f00;
+	display:none;
+}
+i.pass_allright{
+	color:green;
+	display:none;
+}
+.fzd b{
+	display:block;
+	line-height:24px;
+	font-size:13px;
+	color:#444;
+	padding-left:90px;
+}
+b.pass_one{
+	color:green;
+}
+.cl{
+	
+	clear:both;
+}
+.all_email{
+	width:170px;
+	position:absolute;
+	top:31px;
+	left:90px;
+	background:#fff;
+	border:1px solid #ccc;
+	z-index:5;
+	display:none;
+}
+.all_email li{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#666;
+	padding:0px 8px;
+	cursor:pointer;
+}
+.all_email li i{
+	font-style:normal;
+}
+.clear{
+	font-style:normal;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
